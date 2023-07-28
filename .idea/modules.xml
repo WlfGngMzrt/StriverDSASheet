@@ -3,10 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Arrays/NextPermutation/NextPermutation.iml" filepath="$PROJECT_DIR$/Arrays/NextPermutation/NextPermutation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Arrays/Pascals Triangle/Pascals Triangle.iml" filepath="$PROJECT_DIR$/Arrays/Pascals Triangle/Pascals Triangle.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Arrays/Set Matrix Zeros/Set Matrix Zeros.iml" filepath="$PROJECT_DIR$/Arrays/Set Matrix Zeros/Set Matrix Zeros.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Sort0s1s2s/Sort0s1s2s.iml" filepath="$PROJECT_DIR$/Sort0s1s2s/Sort0s1s2s.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arrays/Day 1/Day 1.iml" filepath="$PROJECT_DIR$/Arrays/Day 1/Day 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arrays/Day 1/NextPermutation/NextPermutation.iml" filepath="$PROJECT_DIR$/Arrays/Day 1/NextPermutation/NextPermutation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arrays/Day 1/Pascals Triangle/Pascals Triangle.iml" filepath="$PROJECT_DIR$/Arrays/Day 1/Pascals Triangle/Pascals Triangle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arrays/Day 1/Set Matrix Zeros/Set Matrix Zeros.iml" filepath="$PROJECT_DIR$/Arrays/Day 1/Set Matrix Zeros/Set Matrix Zeros.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arrays/Day 1/Sort0s1s2s/Sort0s1s2s.iml" filepath="$PROJECT_DIR$/Arrays/Day 1/Sort0s1s2s/Sort0s1s2s.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arrays/Day 1/StockSellAndBuy/StockSellAndBuy.iml" filepath="$PROJECT_DIR$/Arrays/Day 1/StockSellAndBuy/StockSellAndBuy.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/StriverDSASheet.iml" filepath="$PROJECT_DIR$/.idea/StriverDSASheet.iml" />
     </modules>
   </component>
