@@ -84,4 +84,41 @@ public class Main {
         Arrays.sort(arr2);
     }
 
+    public static void optimalSolution2(int[] arr1, int[] arr2)
+    {
+        int n = arr1.length;
+        int m = arr2.length;
+        int gap = (n+m)/2 + (n+m)%2 ;
+        while(gap > 0)
+        {
+            int left = 0;
+            int right = left + gap;
+            while(right < (n+m))
+            {
+                if(left < n && right >= n)
+                {
+                    swap(arr1,arr2,left,right-n);
+                }
+                else if (left >= n)
+                {
+                    swap(arr2,arr2,left-n,right-n);
+                }
+                else
+                {
+                    swap(arr1,arr1,left,right);
+                }
+            }
+        }
+
+    }
+
+    public static void swap(int[] arr1, int[] arr2, int i, int j)
+    {
+        if(arr1[i] > arr2[j])
+        {
+            int temp = arr1[i];
+            arr1[i] = arr2[j];
+            arr2[j] = temp;
+        }
+    }
 }
