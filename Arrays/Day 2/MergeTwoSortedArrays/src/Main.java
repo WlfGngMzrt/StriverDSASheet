@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -86,6 +85,8 @@ public class Main {
 
     public static void optimalSolution2(int[] arr1, int[] arr2)
     {
+        //TC : O(N+M)
+        //SC : O(1)
         int n = arr1.length;
         int m = arr2.length;
         int gap = (n+m)/2 + (n+m)%2 ;
@@ -108,6 +109,11 @@ public class Main {
                     swap(arr1,arr1,left,right);
                 }
             }
+            if(gap == 1)
+            {
+                break;
+            }
+            gap = (gap/2) + (gap%2);
         }
 
     }
