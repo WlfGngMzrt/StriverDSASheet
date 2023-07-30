@@ -8,6 +8,8 @@ public class Main {
     }
     public static int[] bruteForce(int[] arr)
     {
+        //TC : O(N)
+        //SC : O(N)
         HashMap<Integer,Integer> hm = new HashMap<>();
         for(int i = 0;i < arr.length;i++)
         {
@@ -43,6 +45,8 @@ public class Main {
 
     public static int[] optimisedApproach1(int[] arr)
     {
+        //TC : O(N)
+        //SC : O(1)
         //this is a mathematical approach for solving the question
         int n = arr.length;
         int sumArr = 0;
@@ -61,6 +65,8 @@ public class Main {
 
         return new int[]{x,y};
     }
+
+
 
 
 
