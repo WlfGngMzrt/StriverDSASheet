@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 
-public class Main {
+public class Solution{
     public static void main(String[] args) {
         int[][] intervals = new int[][]{{1,3},{1,2},{2,4},{2,5},{5,9},{5,10},{5,7}};
         Arrays.sort(intervals, new Comparator<int[]>()

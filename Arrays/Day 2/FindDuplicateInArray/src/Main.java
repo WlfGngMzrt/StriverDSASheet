@@ -52,24 +52,19 @@ public class Main {
         //since one element has been occuring twice it will definitely
         //lead to the creation of a cycle. This will allow us to find out
         //as we can apply the concept of finding where the cycle has started.
-
         int slow = arr[0];
         int fast = arr[0];
-
         while(slow != fast)
         {
-            slow = nums[slow];
-            fast = nums[nums[fast]];
+            slow = arr[slow];
+            fast = arr[arr[fast]];
         }
-
-        fast = nums[0];
-
+        fast = arr[0];
         while(slow != fast)
         {
-            slow = nums[slow];
-            fast = nums[fast];
+            slow = arr[slow];
+            fast = arr[fast];
         }
-
         return fast;
     }
 }
