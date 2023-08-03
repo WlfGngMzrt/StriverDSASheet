@@ -35,56 +35,52 @@ public class Main {
         }
         return ans;
     }
-    public static ArrayList<Integer> betterApproach(int[] arr)
+    public static ArrayList<Integer> betterApproach(int[] nums)
     {
-        int N = arr.length;
+        int N = nums.length;
         ArrayList<Integer> ans = new ArrayList<Integer>();
         HashMap<Integer,Integer> hm = new HashMap<Integer,Integer>();
-        for(int i = 0 ;i < arr.length; i++)
+        for(int i = 0 ;i < nums.length; i++)
         {
-            if(hm.containsKey(arr[i])) {
-                hm.put(arr[i], hm.get(arr[i]) + 1);
-                if (hm.get(arr[i]) > N / 3) {
-                    ans.add(arr[i]);
-                }
-                if (ans.size() == 2)
-                {
-                    return ans;
+            if(hm.containsKey(nums[i])) {
+                hm.put(nums[i], hm.get(nums[i]) + 1);
+                if (hm.get(nums[i]) > N / 3) {
+                    ans.add(nums[i]);
                 }
             }
             else
             {
-                hm.put(arr[i],1);
+                hm.put(nums[i],1);
             }
         }
-        return new ArrayList<>();
+        return ans;
     }
 
-    public static ArrayList<Integer> optimisedMethod(int[] arr)
+    public static ArrayList<Integer> optimisedMethod(int[] nums)
     {
         ArrayList<Integer> ans = new ArrayList<Integer>();
-        int majority1 = arr[0];
+        int majority1 = nums[0];
         int count1 = 1;
-        int majority2 = arr[1];
+        int majority2 = nums[1];
         int count2 = 1;
-        int N = arr.length/3;
-        for(int i = 2; i < arr.length; i++)
+        int N = nums.length/3;
+        for(int i = 2; i < nums.length; i++)
         {
-            if(count1 == 0 && arr[i] != majority2)
+            if(count1 == 0 && nums[i] != majority2)
             {
-                majority1 = arr[i];
+                majority1 = nums[i];
                 count1 = 1;
             }
-            else if(count2 == 0 && arr[i] != majority1)
+            else if(count2 == 0 && nums[i] != majority1)
             {
-                majority2 = arr[i];
+                majority2 = nums[i];
                 count2 = 1;
             }
-            if(arr[i] == majority1)
+            if(nums[i] == majority1)
             {
                 count1++;
             }
-            if(arr[i] == majority2)
+            if(nums[i] == majority2)
             {
                 count2++;
             }
@@ -93,13 +89,13 @@ public class Main {
         }
         int verify1 = 0;
         int verify2 = 0;
-        for(int i = 0; i < arr.length; i++)
+        for(int i = 0; i < nums.length; i++)
         {
-            if(arr[i] == majority1)
+            if(nums[i] == majority1)
             {
                 verify1++;
             }
-            if(arr[i] == majority2)
+            if(nums[i] == majority2)
             {
                 verify2++;
             }
