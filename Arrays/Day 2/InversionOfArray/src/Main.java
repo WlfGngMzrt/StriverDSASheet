@@ -82,8 +82,4 @@ public class Main {
         count += merge(arr,low,mid,high);
         return count;
     }
-
-
-
-
 }
