@@ -69,6 +69,7 @@ public class Main {
                arr[1] = hm.get(compliment);
                return arr;
            }
+           hm.put(arr[i],i);
         }
         return arr;
     }
