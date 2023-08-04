@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class Main {
@@ -70,6 +71,29 @@ public class Main {
            }
         }
         return arr;
+    }
+    public static boolean optimizedApproach(int[] arr, int target)
+    {
+        Arrays.sort(arr);
+        int i = 0;
+        int j = arr.length;
+        while(i < j)
+        {
+            if(arr[i] + arr[j] == target)
+            {
+                return true;
+            }
+
+            if(arr[i] + arr[j] < target)
+            {
+                i++;
+            }
+            else
+            {
+                j++;
+            }
+        }
+        return false;
     }
 
 }
